@@ -1,0 +1,9 @@
+/* mascot (main.js, shapes in shapes.js): 37 px in the sidebar header, opposite the avatar: the same offset from the edge,
+   centered on its height; color — --mascot. The animation is in main.js (requestAnimationFrame), here only the look */
+.mascot { --mascot: #8b55d9; display: inline-flex; line-height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.mascot.in-header { margin: -2.5px 0; }   /* 37 px centered on the 32-pixel avatar */
+.mascot.in-footer { justify-content: flex-end; padding: 0 12px 6px; }
+.mascot svg { overflow: visible; }
+.mascot .m-body { fill: var(--mascot); }
+.mascot .m-eye { fill: #fff; }
+.mascot .m-shut { fill: none; stroke: #fff; stroke-width: 3.2; stroke-linecap: round; }
